@@ -2,6 +2,9 @@
 // Copyright (c) OpenMMLab. All rights reserved.
 #include <ATen/TensorUtils.h>
 #include <torch/extension.h>
+// #include "voxelization.h"
+
+namespace voxelization {
 
 template<typename T, typename T_int>
 void dynamic_voxelize_forward_cpu_kernel(
@@ -174,3 +177,5 @@ int hard_voxelize_cpu(
 
     return voxel_num;
 }
+
+} // namespace voxelization

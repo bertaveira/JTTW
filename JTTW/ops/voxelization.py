@@ -6,7 +6,7 @@ from torch import nn
 from torch.autograd import Function
 from torch.nn.modules.utils import _pair
 
-from JTTW.voxel_op import hard_voxelize, dynamic_voxelize
+from voxel_op import hard_voxelize, dynamic_voxelize
 
 class _Voxelization(Function):
 
